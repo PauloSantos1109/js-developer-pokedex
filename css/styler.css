@@ -1,0 +1,44 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 0.5% 1%; /* Ajuste o valor do padding para reduzir o tamanho do botão */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Ajuste o tamanho da fonte para corresponder ao tamanho reduzido do botão */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}

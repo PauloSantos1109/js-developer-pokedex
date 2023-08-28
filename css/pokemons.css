@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Secular+One&display=swap');
+@font-face {
+    font-family: Hollow;
+    src: url('../letras/Pokemon\ Solid.ttf');
+ }
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+    font-family: Hollow;
+    font-size: clamp(16px, 5vw, 24px);
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilização da lista de pokémons */
+.pokemonList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilização dos elementos da lista de pokémons */
+.pokemons {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: calc(33.33% - 20px);
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pokemons:hover {
+    background-color: #f0f0f0;
+}
+
+.pokemons h4 {
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #030303;
+    font-size: clamp(13px, 2vw, 24px);
+    text-transform: capitalize;
+}
+
+.types {
+    font-weight: 600;
+    color: #000000;
+    font-size: clamp(9px, 1.5vw, 14px);
+    align-self: flex-start;
+}
+
+.pokemons img {
+    height: 70%;
+    transform: translate(10%, -20%);
+    height: auto;
+    align-self: flex-end;
+}
+
+.pokemons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.details-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
